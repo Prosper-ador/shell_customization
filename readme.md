@@ -1,8 +1,8 @@
 This is a **README** file for our shell environment task:  
 Contributors:  
-**Guy Ghislain**  
-**Legadheu Christian**  
-**Nyengka Prosper**  
+-*Guy Ghislain*  
+-*Legadheu Christian*  
+-*Nyengka Prosper*  
 
 ---
 
