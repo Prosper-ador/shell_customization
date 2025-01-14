@@ -138,7 +138,7 @@ function extract() {
 }
 
 # Personalized PS1 Prompt
-PS1='[e[36m]u@h [e[33m]w [e[32m]$(git branch 2>/dev/null | grep "^*" | colrm 1 2)[e[0m] $ '
+PS1="\[\e[32m\]\u@\h\[\e[0m\]:\[\e[34m\]\w\[\e[0m\]\[\e[31m\]\$(parse_git_branch)\[\e[0m\] \$ "
 
 # Autocomplete and History Enhancements
 if [ -f /etc/bash_completion ]; then
@@ -158,10 +158,9 @@ cat << 'EOF' > ~/.bash_profile
 # Source the .bashrc file
 if [ -f ~/.bashrc ]; then
     . ~/.bashrc
-fi
-
 # Display a welcome message
 echo "Welcome back, $(whoami)! Today is $(date +'%A, %B %d, %Y')."
+fi 
 
 EOF
 
@@ -303,7 +302,7 @@ function extract() {
 }
 
 # Personalized PS1 Prompt
-PROMPT='%F{cyan}%n@%m %F{yellow}%~ %F{green}$(git branch 2>/dev/null | grep "^*" | colrm 1 2)%f %# '
+PROMPT="%F{cyan}%n@%m %F{yellow}%~ %F{green}$(git branch 2>/dev/null | grep "^*" | colrm 1 2)%f %# "
 
 # Autocomplete and History Enhancements
 if [ -f /etc/bash_completion ]; then
