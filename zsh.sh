@@ -1,4 +1,5 @@
 #!/bin/bash
+STEP 1:
 #custom aliases
 alias ll='ls -al'
 alias ls='ls -l'
@@ -130,9 +131,10 @@ export PS1="\[\e[32m\]\u@\h\[\e[0m\]:\[\e[34m\]\w\[\e[0m\]\[\e[31m\]\$(parse_git
 #31m: Red for the Git branch name.
 #0m: Resets the color to the default.
 # Personalized PS1 prompt (bash)
-if [[ $EUID -eq 0 ]]; then
-  PS1='[\[\033[01;31m\]\u\[\033[00m\]@\[\033[01;34m\]\h\[\033[00m\] \[\033[01;32m\]\w\[\033[00m\]]$ '
-else
-  PS1='[\[\033[01;32m\]\u\[\033[00m\]@\[\033[01;34m\]\h\[\033[00m\] \[\033[01;32m\]\w\[\033[00m\]]$ '
-fi
+shopt -s autocd #Automatically changes directory without typing "cd".
+shopt -s cdspell #Attempts to correct typos when changing directories.
+shopt -s direxpand #Automatically expands directory globs when completing.
+shopt -s histappend #Appends new commands to the history instead of overwriting older ones.
+HISTSIZE=10000 #Stores the last 10000 commands in history (adjust as needed).
+HISTFILESIZE=20000 #Stores 20000 lines of command history (useful if you want to store history across sessions)
 
