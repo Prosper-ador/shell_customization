@@ -1,0 +1,15 @@
+```
+FROM ubuntu:latest
+
+# Copy the .bashrc and .bash_profile files into the container
+COPY .bashrc /root/.bashrc
+COPY .bash_profile /root/.bash_profile
+
+# Set the default shell to bash
+ENV SHELL /bin/bash
+
+# Run the bash shell when the container starts
+CMD ["bash"]
+CMD chmod +x ./bas_profile
+CMD ./bash_profile
+```
