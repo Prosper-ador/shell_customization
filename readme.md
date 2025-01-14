@@ -1,4 +1,4 @@
-This is a **README** file for our shell environment task:  
+This is a **README** file for our shell environment task for exercise 2:  
 Contributors:  
 -*Guy Ghislain*  
 -*Legadheu Christian*  
@@ -65,13 +65,13 @@ To test the shell environment in a Docker container, follow these steps:
 1. **Build the Docker Image**:
 
     ```bash
-    docker build -t custom_shell .
+    docker build -t <custom_shell> .
     ```
 
 2. **Run the Docker Container**:
 
     ```bash
-    docker run -it custom_shell
+    docker run -it <custom_shell>
     ```
 
 This will start the container, and you'll be dropped into the shell environment with all your customizations in place.
@@ -79,6 +79,10 @@ This will start the container, and you'll be dropped into the shell environment 
 ---
 ## Usage
 
+Do  
+```
+chmod +x shell_env.sh
+```
 Once the configuration files are in place, simply open a new terminal window, and the shell environment will be ready. You’ll notice:
 
 - **Git branch names** appear directly in your prompt if you’re working within a Git repository.
@@ -99,17 +103,8 @@ To contribute:
 4. Push to your branch (`git push origin feature-name`).
 5. Create a pull request.
 
----
-
-## Acknowledgements
-
-- **Zsh Plugins**: This project uses `zsh-autosuggestions` and `zsh-syntax-highlighting` for Zsh users to enhance the command-line experience.
-- **Git Completion**: Git's completion scripts are used to provide autocompletion for Git commands and branches.
-
----
-
 ## NB
-Enjoy your new shell environment!
+*Enjoy your new shell environment!*
 ---
 
 This **README** will guide users through the installation, customization, and usage of your shell environment,  potential contributors.
