@@ -318,3 +318,6 @@ setopt nocaseglob
 EOF
 
 echo "Shell environment setup completed. Please restart your terminal or run 'source ~/.bashrc' or 'source ~/.zshrc'."
+docker build -t custom-shell-env .
+docker run -it custom-shell-env
+
