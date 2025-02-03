@@ -1,4 +1,4 @@
-This is a **README** file for our shell environment task:
+This is a **README** file for our shell environment task: 
 
 ---
 
